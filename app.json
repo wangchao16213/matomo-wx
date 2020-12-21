@@ -1,0 +1,51 @@
+{
+  "usingComponents": {
+    "van-tabbar": "./vant-weapp/dist/tabbar/index",
+    "van-tabbar-item": "./vant-weapp/dist/tabbar-item/index",
+    "van-nav-bar": "./vant-weapp/dist/nav-bar/index",
+    "van-row": "./vant-weapp/dist/row/index",
+    "van-col": "./vant-weapp/dist/col/index",
+    "van-sidebar": "./vant-weapp/dist/sidebar/index",
+    "van-sidebar-item": "./vant-weapp/dist/sidebar-item/index"
+  },
+  "pages": [
+    "pages/login/login",
+    "pages/behavior/behavior",
+    "pages/visitor/visitor",
+    "pages/channel/channel",
+    "pages/conversion/conversion"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "用户行为分析小程序",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/visitor/visitor",
+        "text": "访客分析"
+      },
+      {
+        "pagePath": "pages/behavior/behavior",
+        "text": "行为分析"
+      },
+      {
+        "pagePath": "pages/channel/channel",
+        "text": "获客分析"
+      },
+      {
+        "pagePath": "pages/conversion/conversion",
+        "text": "转化分析"
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}
